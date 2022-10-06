@@ -58,3 +58,19 @@ The data size is huge and the Marketing team has asked you to use Spark to help 
 
 8.	Do feature engineering for column—age and find right age effect on campaign The total time required to complete this task is 8 hours.
 Note: The dataset required for this project can be accessed either from main folder or downloaded from the “Download Center”.
+
+Deliverable requirements:¶
+Provide exploratory data analysis (EDA) for data insights and to support your modeling decisions
+
+Provide rationales for your data preparation decisions (e.g., missing imputation, one-hot encoding, etc.)
+
+Run the model using at least 2 machine learning algorithms (one of them must be logistic regression)
+
+a. Compare your model performance
+
+b. Tell us which algorithm you’d choose for implementation and why
+
+c. Name top three variables that are the most predictive
+
+Provide some use cases that demonstrate business value of your analysis for the bank
+If you could ask the bank for any additional data to solve the problem, what data would you ask and why?
