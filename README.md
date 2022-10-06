@@ -16,55 +16,27 @@ This dataset is based on “Bank Marketing” UCI dataset (please check the desc
 * Housing: has housing loan? (categorical: ‘no’, ‘yes’, ‘unknown’)
 * Loan: has personal loan? (categorical: ‘no’, ‘yes’, ‘unknown’)
 
-# other attributes:
+### Related with the last contact of the current campaign:
+* Contact: contact communication type (categorical: ‘cellular’,‘telephone’)
+* Month: last contact month of year (categorical: ‘jan’, ‘feb’, ‘mar’, …, ‘nov’, ‘dec’)
+* Day_of_week: last contact day of the week (categorical: ‘mon’,‘tue’,‘wed’,‘thu’,‘fri’)
+* Duration: last contact duration, in seconds (numeric). Important note: this attribute highly affects the output target (e.g., if duration=0 then y=‘no’). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model.
 
-12	- campaign: number of times a customer was contacted during the campaign (numeric, includes last contact)
-13	- pdays: number of days passed after the customer was last contacted from a previous campaign (numeric; 999 means customer was not previously contacted)
+### Other attributes:
 
-14	- previous: number of times the customer was contacted prior to (or before) this campaign (numeric)
+* Campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+* Pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means client was not previously contacted)
+* Previous: number of contacts performed before this campaign and for this client (numeric)
+* Poutcome: outcome of the previous marketing campaign (categorical: ‘failure’,‘nonexistent’,‘success’)
 
-15	- poutcome: outcome of the previous marketing campaign (categorical: 'failure', 'nonexistent', 'success')
-
-# social and economic context attributes
-
-16	- emp.var.rate: employment variation rate―quarterly indicator (numeric) 17 - cons.price.idx: consumer price index―monthly indicator (numeric)
-18 - cons.conf.idx: consumer confidence index―monthly indicator (numeric) 19 - euribor3m: euribor 3 month rate―daily indicator (numeric)
-20	- nr.employed: number of employees―quarterly indicator (numeric) Output variable (desired target):
-21	- y - has the customer subscribed a termsit? (binary: 'yes', 'no')
+### social and economic context attributes
+* Emp.var.rate: employment variation rate - quarterly indicator (numeric)
+* Cons.price.idx: consumer price index - monthly indicator (numeric)
+* Cons.conf.idx: consumer confidence index - monthly indicator (numeric)
+* Euribor3m: euribor 3 month rate - daily indicator (numeric)
+* Nr.employed: number of employees - quarterly indicator (numeric)
  
+### Output variable (desired target):
 
-The data size is huge and the Marketing team has asked you to use Spark to help them get answers for the following questions:
+* y: has the client subscribed a term deposit? (binary: ‘yes’, ‘no’)
 
-
-
-1.	Load data and create Spark data frame
-
-2.	Give marketing success rate. (No. of people subscribed / total no. of entries) 2a Give marketing failure rate
-3.	Maximum, Mean, and Minimum age of average targeted customer
-
-4.	Check quality of customers by checking average balance, median balance of customers
-
-5.	Check if age matters in marketing subscription for deposit
-
-6.	Check if marital status mattered for subscription to deposit.
-
-7.	Check if age and marital status together mattered for subscription to deposit scheme
-
-8.	Do feature engineering for column—age and find right age effect on campaign The total time required to complete this task is 8 hours.
-Note: The dataset required for this project can be accessed either from main folder or downloaded from the “Download Center”.
-
-Deliverable requirements:¶
-Provide exploratory data analysis (EDA) for data insights and to support your modeling decisions
-
-Provide rationales for your data preparation decisions (e.g., missing imputation, one-hot encoding, etc.)
-
-Run the model using at least 2 machine learning algorithms (one of them must be logistic regression)
-
-a. Compare your model performance
-
-b. Tell us which algorithm you’d choose for implementation and why
-
-c. Name top three variables that are the most predictive
-
-Provide some use cases that demonstrate business value of your analysis for the bank
-If you could ask the bank for any additional data to solve the problem, what data would you ask and why?
