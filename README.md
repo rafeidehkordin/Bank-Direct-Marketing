@@ -8,9 +8,9 @@ This dataset is based on “Bank Marketing” UCI dataset (please check the desc
 
 ## Available features
 ### Bank client data:
-1	- age (numeric)
+1- age (numeric)
 
-2	- job : type of job (categorical: 'admin.','blue- collar','entrepreneur','housemaid','management','retired','self- employed','services','student','technician','unemployed','unknown')
+2- job : type of job (categorical: 'admin.','blue- collar','entrepreneur','housemaid','management','retired','self- employed','services','student','technician','unemployed','unknown')
 
 3	- marital : marital status (categorical: 'divorced', 'married', 'single', 'unknown'; note: 'divorced' means divorced or widowed)
 
