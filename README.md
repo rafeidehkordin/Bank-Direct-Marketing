@@ -1,8 +1,13 @@
 # Bank-Direct-Marketing
+
 In this case study, you need to use the direct marketing campaigns data of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to assess if the product (bank term deposit) would be ('yes') or not ('no') subscribed by the client. The goal is to predict if the client will subscribe to a term product (variable Y).
 
-# The data fields are:
+# Dataset: 
 
+This dataset is based on “Bank Marketing” UCI dataset (please check the description at: http://archive.ics.uci.edu/ml/datasets/Bank+Marketing). The data is enriched by the addition of five new social and economic features/attributes (national wide indicators from a ~10M population country), published by the Banco de Portugal and publicly available at: https://www.bportugal.pt/estatisticasweb. This dataset is almost identical to the one used in [Moro et al., 2014] (it does not include all attributes due to privacy concerns).
+
+## Available features
+### Bank client data:
 1	- age (numeric)
 
 2	- job : type of job (categorical: 'admin.','blue- collar','entrepreneur','housemaid','management','retired','self- employed','services','student','technician','unemployed','unknown')
