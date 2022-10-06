@@ -1,7 +1,7 @@
 # Bank-Direct-Marketing
 In this case study, you need to use the direct marketing campaigns data of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to assess if the product (bank term deposit) would be ('yes') or not ('no') subscribed by the client. The goal is to predict if the client will subscribe to a term product (variable Y).
 
-#The data fields are:
+# The data fields are:
 
 1	- age (numeric)
 
